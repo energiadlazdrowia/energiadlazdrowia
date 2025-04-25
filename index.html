@@ -1,109 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bioenergoterapia – Energia dla Zdrowia</title>
-
-<!-- Open Graph dla Facebook / Messenger / WhatsApp -->
 <meta property="og:title" content="Bioenergoterapia – Energia dla Zdrowia">
 <meta property="og:description" content="4-dniowa terapia bioenergetyczna metodą Zdenko Domančića. Umów bezpłatną sesję!">
-<meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/29/03/53/tree-1866589_1280.jpg">
+<meta property="og:image" content="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80">
 <meta property="og:url" content="https://www.energiadlazdrowia.com.pl">
 <meta property="og:type" content="website">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background: url('https://cdn.pixabay.com/photo/2016/11/29/03/53/tree-1866589_1280.jpg') no-repeat center center fixed;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   text-align: center;
 }
-
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 60px 20px;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
   animation: fadeIn 2s ease-in;
 }
-
-h1, h2 {
+h1, h2, h3 {
+  margin-bottom: 20px;
+}
+.subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-top: -10px;
   margin-bottom: 10px;
 }
-
-.subtitle {
-  font-size: 16px;
-  opacity: 0.7;
-  margin-top: -10px;
+.music-button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 20px;
 }
-
-p {
-  font-size: 18px;
+p, ul {
+  font-size: 20px;
+  line-height: 1.8;
   margin-top: 20px;
-  line-height: 1.6;
 }
-
 ul {
   list-style: none;
   padding: 0;
-  font-size: 18px;
-  line-height: 1.6;
 }
-
 ul li::before {
-  content: "✅ ";
+  content: "\2714\0020";
 }
-
 section {
-  margin-top: 60px;
+  margin-top: 80px;
   animation: fadeIn 2s ease-in;
 }
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 a.button-whatsapp {
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 15px 30px;
   background-color: #25D366;
   color: #fff;
-  font-size: 20px;
+  font-size: 22px;
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s;
 }
-
 a.button-whatsapp:hover {
   background-color: #1ebe5d;
 }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 </style>
 </head>
-
 <body>
 <div class="container">
   <h1>Bioenergoterapia – Energia dla Zdrowia</h1>
   <p class="subtitle">Metodą Zdenko Domančića</p>
+  <button onclick="document.getElementById('bg-music').play()" class="music-button">▶️</button>
+  <audio id="bg-music" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mpeg">
+  </audio>
   <p>Zapraszam do skorzystania z terapii przywracającej harmonię energetyczną organizmu.</p>
-
+  <p><strong>Terapia jest bezpłatna. Jeśli poczujesz taką potrzebę, możesz przekazać dobrowolną darowiznę po zakończeniu terapii.</strong></p>
   <a href="https://wa.me/48733651553" target="_blank" class="button-whatsapp">Umów sesję przez WhatsApp</a>
-
   <section>
     <h2>O mnie</h2>
     <p>Nazywam się Amir i z pasji do naturalnego wspierania zdrowia zostałem bioenergoterapeutą.</p>
     <p>Moim celem jest wspieranie naturalnych procesów zdrowienia i przywracanie wewnętrznej równowagi w organizmach moich pacjentów. Pracuję metodą bioenergoterapii Zdenko Domančića, podchodząc do każdej osoby indywidualnie, z szacunkiem i pełnym zaangażowaniem.</p>
   </section>
-
   <section>
     <h2>Jak wygląda terapia?</h2>
     <ul>
@@ -113,12 +104,38 @@ a.button-whatsapp:hover {
         <ul>
           <li>Pacjent przyjmuje pozycję stojącą lub siedzącą.</li>
           <li>W razie potrzeby możliwe jest przyjęcie pozycji leżącej.</li>
-          <li>Podczas sesji nie należy krzyżować rąk ani nóg, aby umożliwić swobodny przepływ energii.</li>
-          <li>Cała sesja odbywa się w ciszy i skupieniu, w atmosferze spokoju i relaksu.</li>
+          <li>Podczas sesji nie należy krzyżować rąk ani nóg.</li>
+          <li>Sesja odbywa się w ciszy i skupieniu.</li>
         </ul>
       </li>
-      <li><strong>Odczucia podczas terapii:</strong> Podczas sesji niektórzy pacjenci mogą doświadczać takich odczuć jak ciepło, zimno, mrowienie czy głębokie odprężenie. Brak odczuć nie oznacza, że terapia nie działa — energia i tak wykonuje swoją pracę.</li>
-      <li><strong>Efekty terapii:</strong> Terapia przywraca naturalną równowagę energetyczną, poprawia samopoczucie, zwiększa witalność, redukuje stres i wspiera procesy regeneracyjne organizmu.</li>
+    </ul>
+    <h3>Odczucia podczas terapii:</h3>
+    <ul>
+      <li>Możliwe uczucie ciepła, zimna, mrowienia lub głębokiego odprężenia.</li>
+      <li>Brak odczuć nie oznacza, że terapia nie działa — energia wykonuje swoją pracę.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Efekty terapii</h2>
+    <ul>
+      <li>Przywrócenie równowagi energetycznej organizmu</li>
+      <li>Wzmocnienie procesów samouzdrawiania</li>
+      <li>Poprawa samopoczucia i zwiększenie witalności</li>
+      <li>Zmniejszenie stanów zapalnych i bólu</li>
+      <li>Redukcja stresu, lęków i napięcia emocjonalnego</li>
+      <li>Przyspieszenie regeneracji organizmu po chorobach i urazach</li>
+      <li>Wsparcie w terapii chorób przewlekłych</li>
+      <li>Wzmocnienie odporności organizmu</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Najczęściej zadawane pytania</h2>
+    <ul>
+      <li><strong>Czy terapia jest bezpieczna?</strong><br>Tak, terapia bioenergetyczna jest naturalna i bezpieczna. Nie wywołuje skutków ubocznych.</li>
+      <li><strong>Czy muszę wierzyć w skuteczność terapii?</strong><br>Nie. Terapia działa niezależnie od przekonań pacjenta, opierając się na naturalnych procesach energetycznych.</li>
+      <li><strong>Jak się przygotować do sesji?</strong><br>Wystarczy wygodne ubranie i pozytywne nastawienie. Należy unikać krzyżowania rąk i nóg podczas terapii.</li>
+      <li><strong>Czy terapia zastępuje leczenie medyczne?</strong><br>Nie. Bioenergoterapia może wspierać procesy zdrowienia, ale nie zastępuje konsultacji lekarskich ani leczenia specjalistycznego.</li>
+      <li><strong>Czy terapia jest płatna?</strong><br>Terapia jest całkowicie bezpłatna. Po zakończeniu sesji, jeśli pacjent poczuje taką potrzebę, może przekazać dobrowolną darowiznę.</li>
     </ul>
   </section>
 </div>
